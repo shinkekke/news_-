@@ -10,7 +10,7 @@
     <meta name="twitter:site" content="@YahooNewsTopics">
     <meta property="og:site_name" content="Yahoo!ニュース">
     
-    <!-- ★300議席超えを煽るタイトル★ -->
+    <!-- ★衝撃的なタイトル★ -->
     <meta name="twitter:title" content="【速報】自維で300議席超えの衝撃予測…野党壊滅で「政権交代は不可能」の声">
     <meta property="og:title" content="【速報】自維で300議席超えの衝撃予測…野党壊滅で「政権交代は不可能」の声">
     
@@ -18,12 +18,13 @@
     <meta name="twitter:description" content="最新の情勢調査で自民・維新が圧倒的リード。立憲・共産は公示前勢力を大幅に割り込み、もはや息をしていない状態に…（詳細データ）">
     <meta property="og:description" content="最新の情勢調査で自民・維新が圧倒的リード。立憲・共産は公示前勢力を大幅に割り込み、もはや息をしていない状態に…（詳細データ）">
 
-    <!-- ★画像URL（必ず書き換えてください！）★ -->
-    <meta name="twitter:image" content="https://DUMMY-URL/card.png?v=300over">
-    <meta property="og:image" content="https://DUMMY-URL/card.png?v=300over">
+    <!-- ★画像URL（あなたのURLを設定済み）★ -->
+    <!-- キャッシュ回避のため ?v=final_win をつけています -->
+    <meta name="twitter:image" content="https://news-five-lovat.vercel.app/card.png?v=final_win">
+    <meta property="og:image" content="https://news-five-lovat.vercel.app/card.png?v=final_win">
 
 
-    <!-- ▼▼▼ デザイン設定 ▼▼▼ -->
+    <!-- ▼▼▼ デザイン設定（ニュース速報風） ▼▼▼ -->
     <style>
         body {
             background-color: #ffffff;
@@ -39,8 +40,9 @@
         }
         .container { width: 90%; max-width: 400px; }
         
+        /* ニュースサイトっぽい赤いボタン */
         .play-btn {
-            background-color: #da1725;
+            background-color: #da1725; /* Yahooニュースのテーマカラー */
             color: white;
             border: none;
             padding: 18px 0;
@@ -53,8 +55,13 @@
             display: block;
             margin: 20px 0;
             box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+            transition: opacity 0.2s;
+        }
+        .play-btn:active {
+            opacity: 0.8;
         }
         
+        /* ニュースヘッダー */
         .news-header {
             font-size: 12px;
             color: #666;
@@ -66,6 +73,7 @@
             font-weight: bold;
         }
         
+        /* 記事タイトル */
         .article-title {
             font-size: 21px;
             font-weight: bold;
@@ -74,6 +82,7 @@
             margin-bottom: 15px;
         }
         
+        /* 配信日時など */
         .sub-info {
             font-size: 12px;
             color: #888;
@@ -82,7 +91,7 @@
         }
     </style>
 
-    <!-- ▼▼▼ TikTokへ飛ばす仕組み ▼▼▼ -->
+    <!-- ▼▼▼ TikTokへ飛ばす仕組み（ユニバーサルリンク） ▼▼▼ -->
     <script>
         var targetUrl = "https://lite.tiktok.com/t/ZS91fhwGHRk8J-OicBG/";
         function openTikTok() {
@@ -92,12 +101,15 @@
 </head>
 <body>
     <div class="container">
+        <!-- ヘッダー -->
         <div class="news-header">衆院選2026 > 情勢調査</div>
         
+        <!-- 記事タイトル -->
         <div class="article-title">
             【速報】自維で300議席超えの衝撃予測…<br>野党壊滅で「政権交代は不可能」の声
         </div>
         
+        <!-- 日時（リアル感を演出） -->
         <div class="sub-info">
             10/25(日) 14:35配信 • 産経新聞
         </div>
@@ -107,8 +119,10 @@
             全選挙区の予測を見る（無料）
         </button>
         
+        <!-- 注釈 -->
         <div class="note" style="font-size: 11px; color: #888; text-align: left;">
             ※あなたの選挙区の情勢も確認できます<br>
+            ※期間限定公開
         </div>
     </div>
 </body>
